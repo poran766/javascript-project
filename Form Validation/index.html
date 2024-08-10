@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form>
+            <div class="input-group">
+                <label> Full Name</label>
+                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                <!-- <span id="name-error">Name is required</span> -->
+                <span id="name-error"></span>
+            </div>
+            <div class="input-group">
+                <label> Phone No</label>
+                <input type="tel" placeholder="+880 123 456 789" id="contact-phone" onkeyup="validatePhone()">
+                <!-- <span id="phone-error">Phone number is required</span> -->
+                <span id="phone-error"></span>
+            </div>
+            <div class="input-group">
+                <label> Email</label>
+                <input type="email" placeholder="Enter your Email" id="contact-email" onkeyup="validateEmail()">
+                <!-- <span id="email-error">Email is required</span> -->
+                <span id="email-error"></span>
+            </div>
+            <div class="input-group">
+                <label> Your Message</label>
+                <textarea rows="5" placeholder="Write message" id="contact-msg" onkeyup="validateMsg()"></Textarea>
+                <!-- <span id="message-error">Message is required</span> -->
+                <span id="message-error"></span>
+            </div>
+            <button onclick="return validateForm()">Submit</button>
+            <!-- <span id="submit-error">Please fix the error</span> -->
+            <span id="submit-error"></span>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
